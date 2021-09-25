@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "./mainFrame.module.css";
-import utilStyles from "../styles/utils.module.css";
+
+import Styles from "./mainFrame.module.css";
+
 import Link from "next/link";
 import { Layout } from "antd";
 import Nav from "./nav/nav";
@@ -13,7 +13,7 @@ export const siteTitle = "Home Page";
 
 export default function MainFrame({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={Styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -31,7 +31,7 @@ export default function MainFrame({ children, home }) {
       </Head>
 
       <Layout>
-        <Header>
+        <Header className={Styles.header}>
           <Nav />
         </Header>
         <Content>{children}</Content>

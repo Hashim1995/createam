@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import MainFrame, { siteTitle } from "../components/MainFrame";
-import utilStyles from "../styles/utils.module.css";
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section>
         <p>
           Hello there! I am Hashim, I work for a IT Company as front-end web
           developer

@@ -1,3 +1,12 @@
+.nav{
+    background-color: var(--main-color);
+}
 .menuItem{
     color: white !important;
 }
+.menuContent{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
