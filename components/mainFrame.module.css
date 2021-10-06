@@ -1,6 +1,9 @@
+
 .header{
   height: auto;
-}
-.header{
-  background-color: var(--main-color);
+  padding: 0;
+  background-color: transparent !important;
+  position: sticky;
+  top: -115px;
+  z-index: 99999;
 }

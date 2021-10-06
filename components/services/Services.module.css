@@ -1,0 +1,16 @@
+.ServicesWrap{
+    padding: 3em 7em;
+}
+
+.ServicesTitleWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ServicesTitle{
+    font-size: var(--font-bear);
+}
+.ServicesTitleText{
+    width: 700px;
+    font-size: var(--font-dog);
+}

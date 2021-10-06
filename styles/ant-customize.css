@@ -1,0 +1,26 @@
+
+.ant-menu-item a::before {
+  display: none;
+}
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background: transparent !important;
+}
+
+.custom-ant-btn {
+  border-radius: var(--radius2) !important;
+  background-color: transparent !important;
+  color: var(--white) !important;
+  outline: none !important;
+  border: 2px solid var(--gold) !important;
+}
+.custom-ant-btn::after {
+  box-shadow: none !important;
+}
+.custom-ant-btn:hover {
+  border-radius: var(--radius2) !important;
+  background-color: var(--gold) !important;
+  color: var(--dark-blue) !important;
+  outline: none !important;
+  border: 2px solid transparent !important;
+}
