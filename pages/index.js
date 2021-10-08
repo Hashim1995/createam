@@ -36,11 +36,6 @@ export default function Home() {
       <section className="services">
         <Services />
       </section>
-      <section>
-        <Link href="./posts/first-post">go to post</Link>
-        <br />
-        <Link href="./about">go to About</Link>
-      </section>
     </MainFrame>
   );
 }

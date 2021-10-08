@@ -1,5 +1,9 @@
 .ServicesWrap{
     padding: 3em 7em;
+    background-color: var(--dark-blue);
+
+    border-top: 4px solid var(--green);
+    border-left: 4px solid var(--green)
 }
 
 .ServicesTitleWrap{
@@ -9,8 +13,46 @@
 }
 .ServicesTitle{
     font-size: var(--font-bear);
+    color: var(--white);
 }
 .ServicesTitleText{
     width: 700px;
+    font-size: var(--font-cat);
+    text-align: center;
+    color: var(--white);
+    font-weight: lighter;
+}
+
+.ServicesItemsWrap{
+    padding: 2em 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.ServicesItem{
+    flex-basis: 33.33%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ServicesItemIcon{
+    height: 4em;
+    width: 4em;
+    color: var(--gold);
+}
+.ServicesItemTitle{
     font-size: var(--font-dog);
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: var(--letter-spacing-1);
+}
+.ServicesItemText{
+    font-size: var(--font-cat);
+    text-align: center;
+    font-weight: lighter;
+    color: var(--gold);
+    padding: 0 1em;
 }
