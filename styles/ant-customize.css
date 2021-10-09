@@ -8,11 +8,13 @@
 }
 
 .custom-ant-btn {
+  font-size: var(--font-dog);
   border-radius: var(--radius2) !important;
   background-color: transparent !important;
   color: var(--white) !important;
   outline: none !important;
   border: 2px solid var(--gold) !important;
+  height: auto;
 }
 .custom-ant-btn::after {
   box-shadow: none !important;

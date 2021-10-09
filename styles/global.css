@@ -25,11 +25,13 @@ a {
   --radius6: 6px;
   --radius8: 8px;
   --radius12: 12px;
+  --radius18: 18px;
   --radiusCircle: 50%;
   --white: white;
   --grey: #575757;
   --grey-opa: #5757578a;
   --dark-blue: #191f28;
+  --super-dark-blue: #111720;
   --dark-blue-transparent: #191f28d0;
   --gold: #c7b3a2;
   --green: #16a085;
@@ -41,6 +43,12 @@ a {
   --font-bear: clamp(1rem, calc(-0.875rem + 3.7vw), 2.5rem);
   --font-elephant: clamp(1rem, calc(-0.875rem + 4.6vw), 3.5rem);
   --font-trex: clamp(1.5rem, calc(-0.875rem + 5.5vw), 5rem);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2{

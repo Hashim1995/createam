@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import MainFrame, { siteTitle } from "../components/MainFrame";
 import Services from "../components/services/Services";
+import Difference from "../components/difference/Difference";
 export default function Home() {
   return (
     <MainFrame home>
@@ -35,6 +36,9 @@ export default function Home() {
       </div>
       <section className="services">
         <Services />
+      </section>
+      <section className="difference">
+        <Difference />
       </section>
     </MainFrame>
   );

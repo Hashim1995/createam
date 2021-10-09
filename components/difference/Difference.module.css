@@ -1,0 +1,87 @@
+.DifferenceWrap{
+    padding: 3em 7em;
+    background: var(--white);
+}
+
+.DifferenceTitleWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.DifferenceTitle{
+    font-size: var(--font-bear);
+    max-width: fit-content;
+    color: var(--dark-blue);
+    overflow: hidden; 
+    border-right: .10em solid var(--gold); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 4s steps(40, end) infinite,
+      blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--gold); }
+  }
+.DifferenceTitleText{
+    max-width: 700px;
+    font-size: var(--font-cat);
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: lighter;
+    margin: 1.5em 0;
+}
+.DifferenceItem{
+    flex-basis: 33.33%;
+    padding: 2em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius18);
+    transition: var(--transition);
+    background-color: var(--dark-blue);
+    -webkit-box-shadow: 14px 13px 13px -7px rgba(25,31,40,0.61);
+    -moz-box-shadow: 14px 13px 13px -7px rgba(25,31,40,0.61);
+    box-shadow: 14px 13px 13px -7px rgba(25,31,40,0.61);
+}
+
+.DifferenceItem:hover{
+    transform: scale(1.03);
+    background-color: var(--super-dark-blue);
+    transition-delay: 2s;
+    transition:  var(--transition);
+    
+}
+.DifferenceItem:hover .DifferenceItemIcon{
+    transition-delay: 2s;
+    transition: var(--transition);
+    transform: scale(1.1) translateY(10px) translateX(-10px);
+}
+.DifferenceItemIcon{
+    transition: var(--transition);
+    height: 4em !important;
+    width: 4em !important;
+    color: var(--gold);
+}
+.DifferenceItemTitle{
+    font-size: var(--font-dog);
+    font-weight: bold;
+    color: var(--white
+    );
+    letter-spacing: var(--letter-spacing-1);
+    word-spacing: 100vw;
+    margin: 1em 0;
+}
+.DifferenceItemText{
+    font-size: var(--font-cat);
+    text-align: left;
+    font-weight: lighter;
+    color: var(--gold);
+    
+}

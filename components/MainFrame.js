@@ -15,6 +15,10 @@ export default function MainFrame({ children, home }) {
   return (
     <div className={Styles.container}>
       <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link

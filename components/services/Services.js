@@ -3,6 +3,7 @@ import Style from "./Services.module.css";
 import WebIcon from "@mui/icons-material/Web";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
 import ManageSearchRoundedIcon from "@mui/icons-material/ManageSearchRounded";
+import { Button, Row, Col } from "antd";
 const Services = () => {
   return (
     <div className={Style.ServicesWrap}>
@@ -15,31 +16,44 @@ const Services = () => {
         </h4>
       </div>
       <div className={Style.ServicesItemsWrap}>
-        <div className={Style.ServicesItem}>
-          <WebIcon className={Style.ServicesItemIcon} />
-          <h3 className={Style.ServicesItemTitle}>WEB DESIGN</h3>
-          <p className={Style.ServicesItemText}>
-            We are trusted by a huge number of people are working hard Anonymity
-            and using cryptocurrency as a payment instrument
-          </p>
-        </div>
-        <div className={Style.ServicesItem}>
-          <CodeRoundedIcon className={Style.ServicesItemIcon} />
-          <h3 className={Style.ServicesItemTitle}>WEB SITE </h3>
-          <p className={Style.ServicesItemText}>
-            We are trusted by a huge number of people are working hard Anonymity
-            and using cryptocurrency as a payment instrument
-          </p>
-        </div>
-        <div className={Style.ServicesItem}>
-          <ManageSearchRoundedIcon className={Style.ServicesItemIcon} />
-          <h3 className={Style.ServicesItemTitle}>SEO</h3>
-          <p className={Style.ServicesItemText}>
-            We are trusted by a huge number of people are working hard Anonymity
-            and using cryptocurrency as a payment instrument
-          </p>
-        </div>
+        <Row>
+          <Col span={8}>
+            <div className={Style.ServicesItem}>
+              <WebIcon className={Style.ServicesItemIcon} />
+              <h3 className={Style.ServicesItemTitle}>WEB DESIGN</h3>
+              <p className={Style.ServicesItemText}>
+                We are trusted by a huge number of people are working hard
+                Anonymity and using cryptocurrency as a payment instrument
+              </p>
+            </div>
+          </Col>
+          <Col span={8}>
+            <div className={Style.ServicesItem}>
+              <CodeRoundedIcon className={Style.ServicesItemIcon} />
+              <h3 className={Style.ServicesItemTitle}>WEB SITE </h3>
+              <p className={Style.ServicesItemText}>
+                We are trusted by a huge number of people are working hard
+                Anonymity and using cryptocurrency as a payment instrument
+              </p>
+            </div>
+          </Col>
+          <Col span={8}>
+            <div className={Style.ServicesItem}>
+              <ManageSearchRoundedIcon className={Style.ServicesItemIcon} />
+              <h3 className={Style.ServicesItemTitle}>SEO</h3>
+              <p className={Style.ServicesItemText}>
+                We are trusted by a huge number of people are working hard
+                Anonymity and using cryptocurrency as a payment instrument
+              </p>
+            </div>
+          </Col>
+        </Row>
       </div>
+      <Row>
+        <Col className="center" span={24}>
+          <Button className="custom-ant-btn">Find out more</Button>
+        </Col>
+      </Row>
     </div>
   );
 };
