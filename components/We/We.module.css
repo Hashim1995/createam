@@ -37,6 +37,7 @@
   font-size: var(--font-wolf);
   color: var(--gold);
   margin: 1.5em 0;
+  font-weight: bold;
 }
 .WeContactTitle span {
   color: var(--grey);
@@ -45,6 +46,7 @@
   font-size: var(--font-lion);
   color: var(--dark-blue);
   margin: 1.5em 0;
+  font-weight: bold;
 }
 .WeNumber:hover {
   color: var(--dark-blue);
@@ -77,6 +79,7 @@
 
 .WeFormWrap {
   position: relative;
+  margin: 1.25em 0;
 }
 .WeFormButton {
     cursor: pointer;

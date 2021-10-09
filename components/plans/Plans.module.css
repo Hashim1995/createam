@@ -1,0 +1,46 @@
+.PlansWrap{
+    padding: 10em 7em;
+    background-image: url("./plans.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.PlansItemHeader{
+    padding: 3em 2em;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.PlansItemHeaderTitle{
+    color: var(--white);
+    font-size: var(--font-dog);
+    margin: 1em 0;
+}
+.PlansItemHeaderPrice{
+    color: var(--gold);
+    font-size: var(--font-elephant);
+    font-weight: bold;
+
+    letter-spacing: var(--letter-spacing-2);
+}
+.PlansItemBody{
+    background-color: var(--white);
+    padding: 1.5em 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.PlansItemFooter{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+}
+.PlansItemFooterButton{
+    color: var(--dark-blue) !important;
+}

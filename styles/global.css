@@ -14,6 +14,12 @@ a {
   box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
 }
+*::selection{
+  background-color: var(--gold)
+}
+*::-moz-selection{
+  background-color: var(--gold)
+}
 :root{
   --letter-spacing-1: 1px; 
   --letter-spacing-2: 2px; 

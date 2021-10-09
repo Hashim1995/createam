@@ -4,6 +4,7 @@ import MainFrame, { siteTitle } from "../components/MainFrame";
 import Services from "../components/services/Services";
 import We from "../components/We/We";
 import Difference from "../components/difference/Difference";
+import Plans from "../components/plans/Plans";
 export default function Home() {
   return (
     <MainFrame home>
@@ -43,6 +44,9 @@ export default function Home() {
       </section>
       <section className="we">
         <We />
+      </section>
+      <section className="plans">
+        <Plans />
       </section>
     </MainFrame>
   );

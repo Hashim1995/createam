@@ -8,8 +8,12 @@ import axios from "axios";
 import { message } from "antd";
 const We = () => {
   const [email, setEmail] = useState("");
-  const handleSubmit = (e) => {
-    if (email.length >= 5) {
+  const [emailError, setEmailError] = useState(false);
+
+  const handleSubmit = () => {
+    const emailRegex =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (emailRegex.test(email)) {
       axios
         .post("/user", {
           email: email,
@@ -22,20 +26,24 @@ const We = () => {
         });
     } else {
       errorValid();
+      setEmailError(true);
     }
   };
+
   const success = () => {
     message.success(
-      "Thanks for your message. we will get back to you as soon as possible"
+      "Thanks for your message. We will get back to you as soon as possible"
     );
   };
 
   const error = () => {
     message.error("Something was wrong");
   };
+
   const errorValid = () => {
     message.error("Invalid Email address");
   };
+
   return (
     <div className={Style.WeWrap}>
       <div className={Style.WeLeftWrap}>
@@ -66,6 +74,7 @@ const We = () => {
         </a>
         <div className={Style.WeFormWrap}>
           <input
+            style={{ borderColor: emailError ? "red" : null }}
             name="name"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email address"
