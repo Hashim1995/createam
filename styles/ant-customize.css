@@ -7,6 +7,10 @@
   background: transparent !important;
 }
 
+.ant-message{
+  z-index: 9999999 !important;
+}
+
 .custom-ant-btn {
   font-size: var(--font-dog);
   border-radius: var(--radius2) !important;

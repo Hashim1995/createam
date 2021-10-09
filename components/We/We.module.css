@@ -1,0 +1,93 @@
+.WeWrap {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.WeWrap .WeLeftWrap,
+.WeWrap .WeRightWrap {
+  flex-basis: 50%;
+}
+.WeLeftWrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.WeBackgroundImg {
+  object-fit: cover;
+}
+.WeRightWrap {
+  padding: 1em 15em 5em 3em;
+}
+.WeRightTitle {
+  font-size: var(--font-bear);
+  color: var(--dark-blue);
+  margin: 1em 0;
+}
+.WeRightTopText {
+  font-size: var(--font-dog);
+  color: var(--dark-blue);
+  margin: 1em 0;
+}
+.WeRightBottomText {
+  font-size: var(--font-cat);
+  color: var(--grey);
+  margin: 1.5em 0;
+}
+.WeContactTitle {
+  font-size: var(--font-wolf);
+  color: var(--gold);
+  margin: 1.5em 0;
+}
+.WeContactTitle span {
+  color: var(--grey);
+}
+.WeNumber {
+  font-size: var(--font-lion);
+  color: var(--dark-blue);
+  margin: 1.5em 0;
+}
+.WeNumber:hover {
+  color: var(--dark-blue);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  mask-size: 200%;
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.WeFormWrap {
+  position: relative;
+}
+.WeFormButton {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    border: none;
+    background: transparent;
+}
+.WeFormButton svg{
+    height: 35px;
+    width: 35px;
+    color: var(--gold);
+}

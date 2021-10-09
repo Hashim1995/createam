@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import MainFrame, { siteTitle } from "../components/MainFrame";
 import Services from "../components/services/Services";
+import We from "../components/We/We";
 import Difference from "../components/difference/Difference";
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
       </section>
       <section className="difference">
         <Difference />
+      </section>
+      <section className="we">
+        <We />
       </section>
     </MainFrame>
   );
