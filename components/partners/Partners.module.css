@@ -1,0 +1,16 @@
+.PartnersWrap{
+    min-height: 20vh;
+    padding: 2em 0em;
+}
+.PartnersImgWrap{
+    position: relative;
+    height: 100px;
+}
+.PartnersImg{
+    filter: grayscale();
+    transition: var(--transition);
+}
+.PartnersImg:hover{
+    filter: none;
+    transition: var(--transition);
+}

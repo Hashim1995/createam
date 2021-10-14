@@ -5,9 +5,10 @@ import Services from "../components/services/Services";
 import We from "../components/We/We";
 import Difference from "../components/difference/Difference";
 import Plans from "../components/plans/Plans";
+import Partners from "../components/partners/Partners";
 export default function Home() {
   return (
-    <MainFrame home>
+    <MainFrame>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -47,6 +48,9 @@ export default function Home() {
       </section>
       <section className="plans">
         <Plans />
+      </section>
+      <section className="partners">
+        <Partners />
       </section>
     </MainFrame>
   );
