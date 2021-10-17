@@ -11,7 +11,7 @@ const Blog = () => {
     <div className={Style.BlogWrap}>
       <div className={Style.BlogTitleWrap}>
         <h1 className={Style.BlogTitle}>Latest news</h1>
-        <h4 className={Style.BlogitleText}>
+        <h4 className={Style.BlogTitleText}>
           Wanna be updated with our news or interested in visiting our events,
           just read our blog
         </h4>

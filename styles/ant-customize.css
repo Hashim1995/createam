@@ -30,3 +30,22 @@
   outline: none !important;
   border: 2px solid transparent !important;
 }
+
+.PortfolioTabPanel .ant-tabs-ink-bar {
+  background-color: var(--gold);
+  height: 5px !important;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.ant-tabs-tab{
+  color: var(--white);
+}
+
+.PortfolioTabPanel .ant-tabs-tab-active > div, .ant-tabs-tab:hover,  .PortfolioTabPanel .ant-tabs-tab-btn:focus{
+  color: var(--gold) !important;
+}
+
+.PortfolioTabPanel  .ant-tabs-nav::before{
+  border-bottom: 2px solid var(--gold) !important;
+}

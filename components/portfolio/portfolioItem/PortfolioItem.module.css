@@ -1,0 +1,24 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+.PortfolioItemWrap{
+    margin-top: 3em;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gold);
+    border-radius: var(--radius12);
+}
+.PortfolioItemTitle{
+    font-size: var(--font-bear);
+    color: var(--dark-blue);
+    max-width: fit-content;
+    text-align: center;
+    align-self: center;
+}
+.PortfolioItemDescription{
+    padding: 1em;
+    font-size: var(--dog);
+    color: var(--dark-blue);
+}
+.PortfolioItemImgWrap{
+    padding: 2em;
+}

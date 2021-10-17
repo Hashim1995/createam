@@ -1,0 +1,23 @@
+.PortfolioWrap {
+  padding: 3em 7em;
+  background: var(--dark-blue);
+}
+.PortfolioTitleWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.PortfolioTitle {
+  font-size: var(--font-bear);
+  color: var(--white);
+  max-width: fit-content;
+}
+.PortfolioTitleText {
+    max-width: 700px;
+    font-size: var(--font-cat);
+    text-align: center;
+    color: var(--white);
+    font-weight: lighter;
+    margin: 1.5em 0;
+  }
+  

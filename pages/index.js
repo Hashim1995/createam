@@ -7,6 +7,7 @@ import Difference from "../components/difference/Difference";
 import Plans from "../components/plans/Plans";
 import Partners from "../components/partners/Partners";
 import Blog from "../components/blog/Blog";
+import Portfolio from "../components/portfolio/Portfolio";
 export default function Home() {
   return (
     <MainFrame>
@@ -55,6 +56,9 @@ export default function Home() {
       </section>
       <section className="blog">
         <Blog />
+      </section>
+      <section className="portfolio">
+        <Portfolio />
       </section>
     </MainFrame>
   );
