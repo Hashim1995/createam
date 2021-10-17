@@ -15,7 +15,8 @@
     align-self: center;
 }
 .PortfolioItemDescription{
-    padding: 1em;
+    padding: 2em;
+    margin-bottom: 1.5em;
     font-size: var(--dog);
     color: var(--dark-blue);
 }

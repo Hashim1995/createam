@@ -1,14 +1,10 @@
 import React from "react";
-import { useEffect } from "react";
 import Style from "./Plans.module.css";
 import { Button, Row, Col } from "antd";
 
 const Plans = () => {
-  useEffect(() => {}, []);
-
   return (
     <div className={Style.PlansWrap}>
-      <h2 className={"wow fadeInUp"}>I am animated!</h2>
       <Row gutter={30}>
         <Col span={8}>
           <div className={Style.PlansItemWrap}>

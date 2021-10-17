@@ -1,20 +1,21 @@
-import img1 from "./1.png";
-import img2 from "./2.png";
-import img3 from "./3.png";
 const david = {
   david_Title: "David Ostin",
   david_ImgList: [
     {
-      original: img1,
-      thumbnail: img1,
+      original: "https://i.imgur.com/iPxYr3D.jpg",
+      thumbnail: "https://i.imgur.com/iPxYr3D.jpg",
     },
     {
-      original: img2,
-      thumbnail: img2,
+      original: "https://i.imgur.com/YXSuBer.jpg",
+      thumbnail: "https://i.imgur.com/YXSuBer.jpg",
     },
     {
-      original: img3,
-      thumbnail: img3,
+      original: "https://i.imgur.com/zAgQnpy.png",
+      thumbnail: "https://i.imgur.com/zAgQnpy.png",
+    },
+    {
+      original: "https://i.imgur.com/wcRqGVA.png",
+      thumbnail: "https://i.imgur.com/wcRqGVA.png",
     },
   ],
   david_description:

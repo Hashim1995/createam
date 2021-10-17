@@ -9,32 +9,32 @@ const rrn = {
   rrn_Title: "RRNarqrup",
   rrn_ImgList: [
     {
-      original: img1,
-      thumbnail: img1,
+      original: "https://i.imgur.com/zHnUBP8.png",
+      thumbnail: "https://i.imgur.com/zHnUBP8.png",
     },
     {
-      original: img2,
-      thumbnail: img2,
+      original: "https://i.imgur.com/Au97148.png",
+      thumbnail: "https://i.imgur.com/Au97148.png",
     },
     {
-      original: img3,
-      thumbnail: img3,
+      original: "https://i.imgur.com/7w4UfBA.png",
+      thumbnail: "https://i.imgur.com/7w4UfBA.png",
     },
     {
-      original: img4,
-      thumbnail: img4,
+      original: "https://i.imgur.com/B3778MD.png",
+      thumbnail: "https://i.imgur.com/B3778MD.png",
     },
     {
-      original: img5,
-      thumbnail: img5,
+      original: "https://i.imgur.com/pieSk5x.png",
+      thumbnail: "https://i.imgur.com/pieSk5x.png",
     },
     {
-      original: img6,
-      thumbnail: img6,
+      original: "https://i.imgur.com/xoAmCPv.png",
+      thumbnail: "https://i.imgur.com/xoAmCPv.png",
     },
     {
-      original: img7,
-      thumbnail: img7,
+      original: "https://i.imgur.com/OIic6fA.png",
+      thumbnail: "https://i.imgur.com/OIic6fA.png",
     },
   ],
   rrn_description:
