@@ -40,6 +40,7 @@
 
 .ant-tabs-tab{
   color: var(--white);
+  font-size: var(--font-wolf) !important;
 }
 
 .PortfolioTabPanel .ant-tabs-tab-active > div, .ant-tabs-tab:hover,  .PortfolioTabPanel .ant-tabs-tab-btn:focus{

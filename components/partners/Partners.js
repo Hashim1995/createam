@@ -1,11 +1,12 @@
 import React from "react";
 import Style from "./Partners.module.css";
 import Image from "next/image";
-import googleLogo from "./img/google.png";
-import facebookLogo from "./img/facebook.png";
-import instagramLogo from "./img/instagram.png";
-import whatsappLogo from "./img/whatsapp.png";
-import twitterLogo from "./img/twitter.png";
+import diamond from "./img/diamond.png";
+import rrn from "./img/rrn.png";
+import tobacco from "./img/tobacco.png";
+import gilan from "./img/gilan.png";
+import construction from "./img/construction.svg";
+import david from "./img/david.svg";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
@@ -26,10 +27,10 @@ const Partners = () => {
           <div className={Style.PartnersImgWrap}>
             <Image
               className={Style.PartnersImg}
-              alt="google"
+              alt="Diamond-textile"
               layout="fill"
               objectFit="contain"
-              src={googleLogo}
+              src={diamond}
             />
           </div>
         </SwiperSlide>
@@ -37,10 +38,34 @@ const Partners = () => {
           <div className={Style.PartnersImgWrap}>
             <Image
               className={Style.PartnersImg}
-              alt="facebook"
+              alt="Gilan holding"
               layout="fill"
               objectFit="contain"
-              src={facebookLogo}
+              src={gilan}
+            />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className={Style.PartnersImgWrap}>
+            <Image
+              className={Style.PartnersImg}
+              alt="Baku international tobacco"
+              layout="fill"
+              objectFit="contain"
+              src={tobacco}
+            />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className={Style.PartnersImgWrap}>
+            <Image
+              className={Style.PartnersImg}
+              alt="Gilan Construction"
+              layout="fill"
+              objectFit="contain"
+              src={construction}
             />
           </div>
         </SwiperSlide>
@@ -48,10 +73,10 @@ const Partners = () => {
           <div className={Style.PartnersImgWrap}>
             <Image
               className={Style.PartnersImg}
-              alt="instagram"
+              alt="David C. H. Austin"
               layout="fill"
               objectFit="contain"
-              src={instagramLogo}
+              src={david}
             />
           </div>
         </SwiperSlide>
@@ -59,21 +84,10 @@ const Partners = () => {
           <div className={Style.PartnersImgWrap}>
             <Image
               className={Style.PartnersImg}
-              alt="whatsapp"
+              alt="RRNaqrup"
               layout="fill"
               objectFit="contain"
-              src={whatsappLogo}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={Style.PartnersImgWrap}>
-            <Image
-              className={Style.PartnersImg}
-              alt="twitter"
-              layout="fill"
-              objectFit="contain"
-              src={twitterLogo}
+              src={rrn}
             />
           </div>
         </SwiperSlide>

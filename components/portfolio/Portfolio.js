@@ -4,6 +4,8 @@ import { Tabs } from "antd";
 import PortfolioItem from "./portfolioItem/PortfolioItem";
 import rrn from "./rrn/rrn";
 import david from "./david/david";
+import tobacco from "./tobacco/tobacco";
+import gilan from "./gilan/gilan";
 const Portfolio = () => {
   const { TabPane } = Tabs;
   return (
@@ -37,8 +39,19 @@ const Portfolio = () => {
                 projectDescription={david.david_description}
               />
             </TabPane>
-            <TabPane tab="Tab 3" key="3">
-              Content of Tab Pane 3
+            <TabPane tab={tobacco.tobacco_Title} key="3">
+              <PortfolioItem
+                projectTitle={tobacco.tobacco_Title}
+                images={tobacco.tobacco_ImgList}
+                projectDescription={tobacco.tobacco_description}
+              />
+            </TabPane>
+            <TabPane tab={gilan.gilan_Title} key="4">
+              <PortfolioItem
+                projectTitle={gilan.gilan_Title}
+                images={gilan.gilan_ImgList}
+                projectDescription={gilan.gilan_description}
+              />
             </TabPane>
           </Tabs>
         </div>
