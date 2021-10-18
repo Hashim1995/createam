@@ -3,6 +3,7 @@ import Head from "next/head";
 import MainFrame from "../components/MainFrame";
 import Link from "next/link";
 import { Divider } from "antd";
+import We from "../components/We/We";
 
 const About = () => {
   return (
@@ -10,14 +11,10 @@ const About = () => {
       <Head>
         <title>About</title>
       </Head>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, ipsam
-        quas numquam minima similique tenetur eum officia accusamus magnam
-        commodi, voluptatum velit aut dicta magni quae aperiam, beatae
-        consectetur. Nesciunt!
-      </p>
+      <div className="AboutWrap">
+        <We />
+      </div>
       <Divider />
-      <Link href="/">Back to home page</Link>
     </MainFrame>
   );
 };

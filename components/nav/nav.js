@@ -53,7 +53,7 @@ const Nav = () => {
                 </Link>
               </Col>
               <Col span={4}>
-                <Link href="/">
+                <Link href="/about">
                   <a className={Style.navBottomLinks}>ABOUT</a>
                 </Link>
               </Col>
