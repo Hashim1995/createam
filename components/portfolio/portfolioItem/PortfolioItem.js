@@ -10,7 +10,7 @@ const PortfolioItem = ({ projectTitle, images, projectDescription }) => {
       <div className={Style.PortfolioItemImgWrap}>
         <ImageGallery
           showPlayButton={false}
-          thumbnailPosition="left"
+          thumbnailPosition="right"
           items={images}
         />
       </div>

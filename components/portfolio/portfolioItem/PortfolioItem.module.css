@@ -4,12 +4,12 @@
     padding: 3em 2em;
     display: flex;
     flex-direction: column;
-    background-color: var(--gold);
+    background-color: var(--dark-blue);
     border-radius: var(--radius12);
 }
 .PortfolioItemTitle{
     font-size: var(--font-bear);
-    color: var(--dark-blue);
+    color: var(--white);
     max-width: fit-content;
     text-align: center;
     align-self: center;
@@ -18,7 +18,7 @@
     padding: 2em;
     margin-bottom: 1.5em;
     font-size: var(--dog);
-    color: var(--dark-blue);
+    color: var(--white);
 }
 .PortfolioItemImgWrap{
     padding: 2em;

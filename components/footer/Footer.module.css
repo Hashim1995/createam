@@ -1,0 +1,76 @@
+.FooterWrap {
+  padding: 5em 10em;
+  background-color: var(--dark-blue);
+}
+
+.FooterSectionTitle {
+  font-size: var(--font-lion);
+  color: var(--white);
+}
+.FooterBlogTitle {
+  font-size: var(--font-cat);
+  color: var(--white);
+  font-weight: lighter;
+
+}
+.FooterBlogDate {
+  font-size: var(--font-mouse);
+  color: var(--gold);
+  font-weight: bold;
+}
+.FooterBlogWrap {
+  margin: 1em 0;
+}
+.FooterAboutText {
+  font-size: var(--font-mouse);
+  color: var(--gold);
+  line-height: 2em;
+}
+.FooterSocialIcon {
+  color: var(--gold);
+  font-size: var(--font-bear);
+}
+.FooterSocial {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.FooterSocialText {
+  margin-left: 1em;
+  width: 50%;
+  font-size: var(--font-mouse);
+  color: var(--white);
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--gold);
+  transition: var(--transition) ease-in-out;
+}
+.FooterSocialText:hover{
+    transition: var(--transition) ease-in-out;
+    color: var(--gold);
+}
+
+
+
+
+.FooterContactIcon {
+    color: var(--gold);
+    font-size: var(--font-wolf);
+  }
+  .FooterContact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .FooterContactText {
+    margin-left: 1em;
+    font-size: var(--font-mouse);
+    color: var(--white);
+    transition: var(--transition) ease-in-out;
+  }
+  .FooterContactText:hover{
+      transition: var(--transition) ease-in-out;
+      color: var(--gold);
+  }
+  .footerBottomDivider{
+      color: white !important;
+  }

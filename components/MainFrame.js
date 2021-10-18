@@ -1,12 +1,12 @@
 import Head from "next/head";
 
 import Styles from "./mainFrame.module.css";
-
+import Footer from "./footer/Footer";
 import Link from "next/link";
 import { Layout } from "antd";
 import Nav from "./nav/nav";
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Sider, Content } = Layout;
 
 const name = "Your Name";
 export const siteTitle = "Home Page";

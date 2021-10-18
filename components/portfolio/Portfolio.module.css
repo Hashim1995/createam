@@ -1,6 +1,6 @@
 .PortfolioWrap {
   padding: 3em 7em;
-  background: var(--dark-blue);
+
 }
 .PortfolioTitleWrap {
   display: flex;
@@ -9,14 +9,14 @@
 }
 .PortfolioTitle {
   font-size: var(--font-bear);
-  color: var(--white);
+  color: var(--dark-blue);
   max-width: fit-content;
 }
 .PortfolioTitleText {
     max-width: 700px;
     font-size: var(--font-cat);
     text-align: center;
-    color: var(--white);
+    color: var(--dark-blue);
     font-weight: lighter;
     margin: 1.5em 0;
   }

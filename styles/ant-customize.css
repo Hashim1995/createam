@@ -39,7 +39,7 @@
 }
 
 .ant-tabs-tab{
-  color: var(--white);
+  color: var(--dark-blue);
   font-size: var(--font-wolf) !important;
 }
 
@@ -49,4 +49,8 @@
 
 .PortfolioTabPanel  .ant-tabs-nav::before{
   border-bottom: 2px solid var(--gold) !important;
+}
+.ant-divider-horizontal.ant-divider-with-text::before,
+.ant-divider-horizontal.ant-divider-with-text::after{
+  border-color: var(--white);
 }
