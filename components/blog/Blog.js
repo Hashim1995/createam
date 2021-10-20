@@ -21,7 +21,7 @@ const Blog = () => {
           <div className={Style.BlogItemWrap}>
             <div className={Style.BlogItemTop}>
               <Image
-                objectFit="contain"
+                objectFit="cover"
                 src={postImg}
                 layout="fill"
                 alt="Sample post with Image"
@@ -52,7 +52,7 @@ const Blog = () => {
           <div className={Style.BlogItemWrap}>
             <div className={Style.BlogItemTop}>
               <Image
-                objectFit="contain"
+                objectFit="cover"
                 src={postImg}
                 layout="fill"
                 alt="Sample post with Image"
@@ -85,7 +85,7 @@ const Blog = () => {
           <div className={Style.BlogItemWrap}>
             <div className={Style.BlogItemTop}>
               <Image
-                objectFit="contain"
+                objectFit="cover"
                 src={postImg}
                 layout="fill"
                 alt="Sample post with Image"
@@ -117,7 +117,7 @@ const Blog = () => {
           <div className={Style.BlogItemWrap}>
             <div className={Style.BlogItemTop}>
               <Image
-                objectFit="contain"
+                objectFit="cover"
                 src={postImg}
                 layout="fill"
                 alt="Sample post with Image"

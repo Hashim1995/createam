@@ -1,6 +1,7 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 html,
 body {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: 'Comfortaa', cursive;
@@ -42,11 +43,11 @@ a {
   --gold: #c7b3a2;
   --green: #16a085;
   --font-mouse: clamp(13px, calc(-0.875rem + 1vw), 1rem);
-  --font-cat: clamp(13px, calc(-0.875rem + 2.1vw), 1rem);
-  --font-dog: clamp(13px, calc(-0.875rem + 2.3vw), 1.5rem);
-  --font-wolf: clamp(1rem, calc(-0.875rem + 2.7vw), 2.5rem);
-  --font-lion: clamp(1rem, calc(-0.875rem + 3vw), 2.5rem);
-  --font-bear: clamp(1rem, calc(-0.875rem + 3.7vw), 2.5rem);
+  --font-cat: clamp(13px, calc(-0.875rem + 1.5vw), 1rem);
+  --font-dog: clamp(13px, calc(-0.875rem + 1.6vw), 1.5rem);
+  --font-wolf: clamp(1rem, calc(-0.875rem + 2.1vw), 2.5rem);
+  --font-lion: clamp(1rem, calc(-0.875rem + 2.3vw), 2.5rem);
+  --font-bear: clamp(1rem, calc(-0.875rem + 2.5vw), 2.5rem);
   --font-elephant: clamp(1rem, calc(-0.875rem + 4.6vw), 3.5rem);
   --font-trex: clamp(1.5rem, calc(-0.875rem + 5.5vw), 5rem);
 }

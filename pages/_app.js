@@ -1,8 +1,13 @@
 import "antd/dist/antd.css";
 import "../styles/global.css";
 import "../styles/ant-customize.css";
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import { AnimatePresence } from "framer-motion";
+function MyApp({ Component, pageProps, router }) {
+  return (
+    <AnimatePresence exitBeforeEnter>
+      <Component {...pageProps} key={router.route} />
+    </AnimatePresence>
+  );
 }
 
 export default MyApp;

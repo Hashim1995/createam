@@ -27,10 +27,6 @@ export default function MainFrame({ children, home }) {
         />
 
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-        />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
