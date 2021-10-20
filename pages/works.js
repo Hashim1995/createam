@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import MainFrame from "../components/MainFrame";
 import Link from "next/link";
 import { Divider } from "antd";
-import We from "../components/We/We";
-import { AboutUs } from "../components/aboutUs/AboutUs";
+import Portfolio from "../components/portfolio/Portfolio";
 
-const About = () => {
+const WorksPage = () => {
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -19,13 +18,12 @@ const About = () => {
         <Head>
           <title>About</title>
         </Head>
-        <div className="AboutWrap">
-          <AboutUs />
-          <We />
+        <div className="PortfolioWrap">
+          <Portfolio />
         </div>
         <Divider />
       </MainFrame>
     </motion.div>
   );
 };
-export default About;
+export default WorksPage;

@@ -41,6 +41,7 @@ a {
   --super-dark-blue: #111720;
   --dark-blue-transparent: #191f28d0;
   --gold: #c7b3a2;
+  --dark-gold : #928173;
   --green: #16a085;
   --font-mouse: clamp(13px, calc(-0.875rem + 1vw), 1rem);
   --font-cat: clamp(13px, calc(-0.875rem + 1.5vw), 1rem);
@@ -341,6 +342,6 @@ h2{
 .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
   height: 50px;
 }
-.AboutWrap{
+.AboutWrap, .ServicesWrap{
   margin: 3em 0;
 }

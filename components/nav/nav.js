@@ -38,17 +38,17 @@ const Nav = () => {
                 </Link>
               </Col>
               <Col span={4}>
-                <Link href="/">
+                <Link href="/services">
                   <a className={Style.navBottomLinks}>SERVICES</a>
                 </Link>
               </Col>
               <Col span={4}>
-                <Link href="/">
+                <Link href="/works">
                   <a className={Style.navBottomLinks}>WORKS</a>
                 </Link>
               </Col>
               <Col span={4}>
-                <Link href="/">
+                <Link href="/blog">
                   <a className={Style.navBottomLinks}>BLOG</a>
                 </Link>
               </Col>

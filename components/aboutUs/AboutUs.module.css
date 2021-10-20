@@ -1,0 +1,49 @@
+.AboutUsWrap {
+  padding: 3em 7em;
+}
+.AboutUsTitleWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutUsTitle {
+  font-size: var(--font-bear);
+  color: var(--dark-blue);
+  max-width: fit-content;
+  font-weight: bold;
+  letter-spacing: var(--letter-spacing-2);
+}
+.AboutUsTitleText {
+  max-width: 700px;
+  font-size: var(--font-cat);
+  text-align: center;
+  color: var(--dark-blue);
+  font-weight: lighter;
+  margin: 1.5em 0;
+}
+
+.AboutUsItemWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+.AboutUsItemWrapSecond{
+  margin-top: 2em;
+}
+.AboutUsItemIcon{
+  height: 4em !important;
+  width: 4em !important;
+  color: var(--gold);
+}
+.AboutUsItemtitle{
+  color: var(--dark-blue);
+  font-size: var(--font-lion);
+  margin: 1em 0;
+}
+.AboutUsItemText{
+  color: var(--dark-gold);
+  font-size: var(--font-dog);
+  text-align: center;
+}
