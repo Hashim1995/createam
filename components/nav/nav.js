@@ -40,7 +40,7 @@ const Nav = () => {
               </Link>
             </Col>
             <Col span={24}>
-              <Link href="/">
+              <Link href="/contact">
                 <a className={Style.navBottomLinks}>CONTACT</a>
               </Link>
             </Col>
@@ -131,7 +131,7 @@ const Nav = () => {
                   </Link>
                 </Col>
                 <Col span={4}>
-                  <Link href="/">
+                  <Link href="/contact">
                     <a className={Style.navBottomLinks}>CONTACT</a>
                   </Link>
                 </Col>

@@ -1,0 +1,50 @@
+.ContactFormWrap {
+  padding: 3em 7em;
+}
+.ContactFormTitleWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContactFormTitle {
+  font-size: var(--font-bear);
+  color: var(--dark-blue);
+  max-width: fit-content;
+  font-weight: bold;
+  letter-spacing: var(--letter-spacing-2);
+}
+.ContactFormTitleText {
+  max-width: 700px;
+  font-size: var(--font-cat);
+  text-align: center;
+  color: var(--dark-blue);
+  font-weight: lighter;
+  margin: 1.5em 0;
+}
+
+.ContactFormFormWrap {
+  padding: 2em 0;
+}
+
+.ContactFormFormItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.ContactFormTextArea{
+    min-height: 150px;
+    padding: 1.5em inherit;
+}
+
+.ContactFormButton{
+    color: var(--dark-blue) !important;
+    width: 200px;
+}
+
+@media screen and (max-width: 575px) {
+  .ContactFormWrap {
+    padding: 3em 1em;
+  }
+}
