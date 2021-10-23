@@ -1,15 +1,10 @@
-import { React, useState, useLayoutEffect } from "react";
+import { React, useContext } from "react";
 import Style from "./PortfolioItem.module.css";
 import ImageGallery from "react-image-gallery";
-
+import { GeneralData } from "../../../Context/Context";
 const PortfolioItem = ({ projectTitle, images, projectDescription }) => {
-  const [screenIsXS, setScreenIsXS] = useState(false);
-  useLayoutEffect(() => {
-    if (window.innerWidth < 576) setScreenIsXS(true);
-    else {
-      setScreenIsXS(false);
-    }
-  });
+  const generalData = useContext(GeneralData);
+  const screenIsXS = generalData.screenIsXS;
   return (
     <div className={Style.PortfolioItemWrap}>
       <h1 className={Style.PortfolioItemTitle}>{projectTitle}</h1>

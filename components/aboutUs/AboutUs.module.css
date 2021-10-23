@@ -47,3 +47,11 @@
   font-size: var(--font-dog);
   text-align: center;
 }
+@media screen and (max-width: 575px) {
+  .AboutUsWrap {
+    padding: 3em 1em;
+  }
+  .AboutUsItemWrap{
+    padding: 1em 0;
+  }
+}

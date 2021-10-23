@@ -94,4 +94,7 @@
   .DifferenceWrap {
     padding: 3em 1em;
   }
+  .DifferenceItem {
+    height: auto;
+  }
 }

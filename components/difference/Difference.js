@@ -21,7 +21,7 @@ const Difference = () => {
       </div>
       <div className={Style.DifferenceItemWrap}>
         <Row>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={12} lg={8}>
             <Zoom>
               <div className={Style.DifferenceItem}>
                 <ImportantDevicesOutlinedIcon
@@ -36,7 +36,7 @@ const Difference = () => {
               </div>
             </Zoom>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={12} lg={8}>
             <Zoom>
               <div className={Style.DifferenceItem}>
                 <PostAddOutlinedIcon className={Style.DifferenceItemIcon} />
@@ -49,7 +49,7 @@ const Difference = () => {
               </div>
             </Zoom>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={12} lg={8}>
             <Zoom>
               <div className={Style.DifferenceItem}>
                 <DashboardCustomizeOutlinedIcon
@@ -66,7 +66,7 @@ const Difference = () => {
               </div>
             </Zoom>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={12} lg={8}>
             <Zoom>
               <div className={Style.DifferenceItem}>
                 <FontDownloadOutlinedIcon
@@ -81,7 +81,7 @@ const Difference = () => {
               </div>
             </Zoom>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={12} lg={8}>
             <Zoom>
               <div className={Style.DifferenceItem}>
                 <BuildOutlinedIcon className={Style.DifferenceItemIcon} />
@@ -94,7 +94,7 @@ const Difference = () => {
               </div>
             </Zoom>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={12} lg={8}>
             <Zoom>
               <div className={Style.DifferenceItem}>
                 <SendToMobileOutlinedIcon

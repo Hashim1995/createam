@@ -17,7 +17,7 @@ const Services = () => {
       </div>
       <div className={Style.ServicesItemsWrap}>
         <Row>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={8}>
             <div className={Style.ServicesItem}>
               <WebIcon className={Style.ServicesItemIcon} />
               <h3 className={Style.ServicesItemTitle}>WEB DESIGN</h3>
@@ -27,7 +27,7 @@ const Services = () => {
               </p>
             </div>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={8}>
             <div className={Style.ServicesItem}>
               <CodeRoundedIcon className={Style.ServicesItemIcon} />
               <h3 className={Style.ServicesItemTitle}>WEB SITE </h3>
@@ -37,7 +37,7 @@ const Services = () => {
               </p>
             </div>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={12} md={8}>
             <div className={Style.ServicesItem}>
               <ManageSearchRoundedIcon className={Style.ServicesItemIcon} />
               <h3 className={Style.ServicesItemTitle}>SEO</h3>

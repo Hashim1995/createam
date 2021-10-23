@@ -49,4 +49,7 @@
     .PlansWrap{
         padding: 3em 1em;
     }
+    .PlansItemWrap{
+        margin: 1em 0 ;
+    }
 }

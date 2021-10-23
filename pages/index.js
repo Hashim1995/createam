@@ -13,10 +13,10 @@ import Portfolio from "../components/portfolio/Portfolio";
 export default function Home() {
   return (
     <motion.div
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 0.7 }}
-      exit={{ scale: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0 }}
     >
       <MainFrame>
         <Head>

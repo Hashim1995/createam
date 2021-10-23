@@ -15,7 +15,7 @@ export const AboutUs = () => {
         </h4>
       </div>
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={8} xs={24}>
           <div className={Style.AboutUsItemWrap}>
             <SupervisedUserCircleIcon className={Style.AboutUsItemIcon} />
             <h2 className={Style.AboutUsItemtitle}>Who we are?</h2>
@@ -26,7 +26,7 @@ export const AboutUs = () => {
             </p>
           </div>
         </Col>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={8} xs={24}>
           <div
             className={`${Style.AboutUsItemWrap} ${Style.AboutUsItemWrapSecond}`}
           >
@@ -39,7 +39,7 @@ export const AboutUs = () => {
             </p>
           </div>
         </Col>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={8} xs={24}>
           <div className={Style.AboutUsItemWrap}>
             <FavoriteIcon className={Style.AboutUsItemIcon} />
             <h2 className={Style.AboutUsItemtitle}>Why We Do It?</h2>

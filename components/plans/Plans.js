@@ -6,7 +6,7 @@ const Plans = () => {
   return (
     <div className={Style.PlansWrap}>
       <Row gutter={30}>
-        <Col span={8}>
+        <Col xs={24} sm={12} md={8}>
           <div className={Style.PlansItemWrap}>
             <div className={Style.PlansItemHeader}>
               <h1 className={Style.PlansItemHeaderTitle}>BASIC PLAN</h1>
@@ -30,7 +30,7 @@ const Plans = () => {
             </div>
           </div>
         </Col>
-        <Col span={8}>
+        <Col xs={24} sm={12} md={8}>
           <div className={Style.PlansItemWrap}>
             <div className={Style.PlansItemHeader}>
               <h1 className={Style.PlansItemHeaderTitle}>ADVANCED PLAN</h1>
@@ -54,7 +54,7 @@ const Plans = () => {
             </div>
           </div>
         </Col>
-        <Col span={8}>
+        <Col xs={24} sm={12} md={8}>
           <div className={Style.PlansItemWrap}>
             <div className={Style.PlansItemHeader}>
               <h1 className={Style.PlansItemHeaderTitle}>PREMIUM PLAN</h1>

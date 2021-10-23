@@ -5,20 +5,9 @@ import Footer from "./footer/Footer";
 import Link from "next/link";
 import { Layout } from "antd";
 import Nav from "./nav/nav";
-export const GeneralData = createContext();
-
 export const siteTitle = "Home Page";
 
 const MainFrame = ({ children, home }) => {
-  const [screenIsXS, setScreenIsXS] = useState(false);
-  useLayoutEffect(() => {
-    if (window.innerWidth < 576) setScreenIsXS(true);
-    else {
-      setScreenIsXS(false);
-    }
-  });
-  const generalData = { screenIsXS: screenIsXS };
-
   const { Header, Sider, Content } = Layout;
   return (
     <div className={Styles.container}>
@@ -48,15 +37,14 @@ const MainFrame = ({ children, home }) => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <GeneralData.Provider value={generalData}>
-        <Layout>
-          <Header className={Styles.header}>
-            <Nav />
-          </Header>
-          <Content>{children}</Content>
-          <Footer>Footer</Footer>
-        </Layout>
-      </GeneralData.Provider>
+
+      <Layout>
+        <Header className={Styles.header}>
+          <Nav />
+        </Header>
+        <Content>{children}</Content>
+        <Footer>Footer</Footer>
+      </Layout>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import Style from "./nav.module.css";
 import Link from "next/link";
-import { GeneralData } from "../MainFrame";
+import { GeneralData } from "../../Context/Context";
 const Nav = () => {
   const generalData = useContext(GeneralData);
   const screenIsXS = generalData.screenIsXS;

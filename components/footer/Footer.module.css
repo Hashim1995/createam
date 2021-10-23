@@ -74,3 +74,9 @@
   .footerBottomDivider{
       color: white !important;
   }
+
+  @media screen and (max-width: 575px){
+    .FooterWrap {
+      padding: 3em 1em;
+    }
+  }

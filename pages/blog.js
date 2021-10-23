@@ -9,10 +9,10 @@ import Blog from "../components/blog/Blog";
 const BlogPage = () => {
   return (
     <motion.div
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 0.7 }}
-      exit={{ scale: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0 }}
     >
       <MainFrame>
         <Head>

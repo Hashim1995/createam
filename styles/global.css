@@ -368,8 +368,8 @@ h2{
     font-size: 23px;
   }
   .image-gallery-fullscreen-button .image-gallery-svg, .image-gallery-play-button .image-gallery-svg {
-    height: 40px !important;
-    width: 40px !important;
+    height: 30px !important;
+    width: 30px !important;
 }
 }
 

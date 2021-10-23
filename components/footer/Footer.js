@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className={Style.FooterWrap}>
       <Row>
-        <Col md={6} sm={12}>
+        <Col md={6} sm={12} xs={24}>
           <h3 className={Style.FooterSectionTitle}>Blog</h3>
           <div className={Style.FooterBlogWrap}>
             <h5 className={Style.FooterBlogTitle}>Sample post with Image</h5>
@@ -30,7 +30,7 @@ const Footer = () => {
             <h6 className={Style.FooterBlogDate}>JUNE 17, 2018</h6>
           </div>
         </Col>
-        <Col md={6} sm={12}>
+        <Col md={6} sm={12} xs={24}>
           <h3 className={Style.FooterSectionTitle}>About</h3>
           <p className={Style.FooterAboutText}>
             We are an international financial company engaged in investment
@@ -40,7 +40,7 @@ const Footer = () => {
             exchanges performed by qualified professional traders.
           </p>
         </Col>
-        <Col md={6} sm={12}>
+        <Col md={6} sm={12} xs={24}>
           <h3 className={Style.FooterSectionTitle}>Social</h3>
           <div className={Style.FooterSocialWrap}>
             <div className={Style.FooterSocial}>
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        <Col md={6} sm={12}>
+        <Col md={6} sm={12} xs={24}>
           <h3 className={Style.FooterSectionTitle}>Contact</h3>
           <div className={Style.FooterContactWrap}>
             <div className={Style.FooterContact}>
