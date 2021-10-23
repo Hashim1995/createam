@@ -1,6 +1,5 @@
 .PortfolioWrap {
   padding: 3em 7em;
-
 }
 .PortfolioTitleWrap {
   display: flex;
@@ -21,3 +20,8 @@
     margin: 1.5em 0;
   }
   
+  @media screen and (max-width: 575px){
+    .PortfolioWrap {
+      padding: 3em 1em;
+    }
+  }

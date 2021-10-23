@@ -82,15 +82,29 @@
   margin: 1.25em 0;
 }
 .WeFormButton {
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    border: none;
-    background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  border: none;
+  background: transparent;
 }
-.WeFormButton svg{
-    height: 35px;
-    width: 35px;
-    color: var(--gold);
+.WeFormButton svg {
+  height: 35px;
+  width: 35px;
+  color: var(--gold);
+}
+
+@media screen and (max-width: 575px) {
+  .WeWrap {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .WeRightWrap {
+    padding: 3em 1em;
+  }
+  .WeWrap .WeLeftWrap,
+  .WeWrap .WeRightWrap {
+    flex-basis: 100%;
+  }
 }

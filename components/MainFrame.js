@@ -1,17 +1,25 @@
+import { React, useState, createContext, useLayoutEffect } from "react";
 import Head from "next/head";
-
 import Styles from "./mainFrame.module.css";
 import Footer from "./footer/Footer";
 import Link from "next/link";
 import { Layout } from "antd";
 import Nav from "./nav/nav";
+export const GeneralData = createContext();
 
-const { Header, Sider, Content } = Layout;
-
-const name = "Your Name";
 export const siteTitle = "Home Page";
 
-export default function MainFrame({ children, home }) {
+const MainFrame = ({ children, home }) => {
+  const [screenIsXS, setScreenIsXS] = useState(false);
+  useLayoutEffect(() => {
+    if (window.innerWidth < 576) setScreenIsXS(true);
+    else {
+      setScreenIsXS(false);
+    }
+  });
+  const generalData = { screenIsXS: screenIsXS };
+
+  const { Header, Sider, Content } = Layout;
   return (
     <div className={Styles.container}>
       <Head>
@@ -40,14 +48,17 @@ export default function MainFrame({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
-      <Layout>
-        <Header className={Styles.header}>
-          <Nav />
-        </Header>
-        <Content>{children}</Content>
-        <Footer>Footer</Footer>
-      </Layout>
+      <GeneralData.Provider value={generalData}>
+        <Layout>
+          <Header className={Styles.header}>
+            <Nav />
+          </Header>
+          <Content>{children}</Content>
+          <Footer>Footer</Footer>
+        </Layout>
+      </GeneralData.Provider>
     </div>
   );
-}
+};
+
+export default MainFrame;

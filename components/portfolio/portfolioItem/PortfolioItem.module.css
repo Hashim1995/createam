@@ -23,3 +23,8 @@
 .PortfolioItemImgWrap{
     padding: 2em;
 }
+@media screen and (max-width: 575px){
+    .PortfolioItemWrap{
+        padding: 3em 0.5em;
+    }
+  }

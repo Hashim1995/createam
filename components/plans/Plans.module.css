@@ -44,3 +44,9 @@
 .PlansItemFooterButton{
     color: var(--dark-blue) !important;
 }
+
+@media screen and (max-width: 575px){
+    .PlansWrap{
+        padding: 3em 1em;
+    }
+}

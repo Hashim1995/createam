@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
 }
 
 a {
@@ -40,6 +41,7 @@ a {
   --dark-blue: #191f28;
   --super-dark-blue: #111720;
   --dark-blue-transparent: #191f28d0;
+  --dark-blue-transparent-mobile: #191f28ed;
   --gold: #c7b3a2;
   --dark-gold : #928173;
   --green: #16a085;
@@ -345,3 +347,29 @@ h2{
 .AboutWrap, .ServicesWrap{
   margin: 3em 0;
 }
+
+
+@media  screen and (max-width: 575px){
+  .landingTextBottom__container{
+    padding: 0;
+  }
+  .landing-bg{
+    height: 114vh;
+  }
+  .landingText {
+    font-size: 2rem;
+    width: fit-content;
+    letter-spacing: 0px
+  }
+  .landingTextBottom__container::before, .landingTextBottom__container::after{
+    display: none;
+  }
+  .landingTextBottom {
+    font-size: 23px;
+  }
+  .image-gallery-fullscreen-button .image-gallery-svg, .image-gallery-play-button .image-gallery-svg {
+    height: 40px !important;
+    width: 40px !important;
+}
+}
+
