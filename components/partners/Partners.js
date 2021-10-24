@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useContext } from "react";
 import Style from "./Partners.module.css";
 import Image from "next/image";
 import diamond from "./img/diamond.png";
@@ -7,6 +7,7 @@ import tobacco from "./img/tobacco.png";
 import gilan from "./img/gilan.png";
 import construction from "./img/construction.svg";
 import david from "./img/david.svg";
+import { GeneralData } from "../../Context/Context";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
@@ -14,6 +15,9 @@ import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 
 const Partners = () => {
+  const generalData = useContext(GeneralData);
+  const screenIsXS = generalData.screenIsXS;
+
   SwiperCore.use([Autoplay]);
   return (
     <div className={Style.PartnersWrap}>
@@ -21,7 +25,7 @@ const Partners = () => {
         loop={true}
         autoplay={{ delay: 3000 }}
         spaceBetween={50}
-        slidesPerView={8}
+        slidesPerView={screenIsXS ? 2 : 8}
       >
         <SwiperSlide>
           <div className={Style.PartnersImgWrap}>

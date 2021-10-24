@@ -1,6 +1,6 @@
 import { React, useState, useLayoutEffect, useContext } from "react";
 import { useRouter } from "next/router";
-import { Menu, Button, Row, Col, Dropdown } from "antd";
+import { Menu, Button, Row, Col, Dropdown, Switch } from "antd";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import Style from "./nav.module.css";
@@ -10,6 +10,7 @@ const Nav = () => {
   const generalData = useContext(GeneralData);
   const screenIsXS = generalData.screenIsXS;
   const { asPath } = useRouter();
+
   const menuOnMobile = (
     <Menu className={(Style.nav, Style.navBottom)} mode="horizontal">
       <Row style={{ width: "100%" }} align={"middle"} justify={"center"}>
