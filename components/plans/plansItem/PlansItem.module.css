@@ -1,0 +1,18 @@
+.PlansItemWrap{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.PlansItemHeaderTitle{
+    color: var(--dark-blue);
+    font-size: var(--font-bear);
+}
+.PlansItemHeaderPrice{
+    color: var(--dark-blue);
+    font-size: var(--font-lion);
+}
+.PlansItemButton{
+    color: var(--dark-blue) !important;
+}

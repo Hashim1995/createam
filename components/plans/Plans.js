@@ -1,84 +1,98 @@
-import React from "react";
+import { React, useState } from "react";
 import Style from "./Plans.module.css";
-import { Button, Row, Col } from "antd";
-
+import { Button, Row, Col, Modal } from "antd";
+import PlansItem from "./plansItem/PlansItem";
 const Plans = () => {
+  const plansData = [
+    {
+      id: 1,
+      PlansItemHeaderTitle: "BASIC PLAN",
+      PlansItemHeaderPrice: "299 ₼",
+      PlansItemBodyTexts: [
+        "Consulting",
+        "Advising",
+        "Business Planning",
+        "-",
+        "-",
+      ],
+    },
+    {
+      id: 2,
+      PlansItemHeaderTitle: "ADVANCED PLAN",
+      PlansItemHeaderPrice: "499 ₼",
+      PlansItemBodyTexts: [
+        "Consulting",
+        "Advising",
+        "Business Planning",
+        "Investments",
+        "-",
+      ],
+    },
+    {
+      id: 3,
+      PlansItemHeaderTitle: "PREMIUM PLAN",
+      PlansItemHeaderPrice: "999 ₼",
+      PlansItemBodyTexts: [
+        "Consulting",
+        "Advising",
+        "Business Planning",
+        "Investments",
+        "24/7 Support",
+      ],
+    },
+  ];
+
+  const [planItemModalVisible, setPlanItemModalVisible] = useState(false);
+  const [selectedPlanId, setSelectedPlanId] = useState(null);
   return (
     <div className={Style.PlansWrap}>
       <Row gutter={30}>
-        <Col xs={24} sm={12} md={8}>
-          <div className={Style.PlansItemWrap}>
-            <div className={Style.PlansItemHeader}>
-              <h1 className={Style.PlansItemHeaderTitle}>BASIC PLAN</h1>
-              <h4 className={Style.PlansItemHeaderPrice}>299 ₼</h4>
-            </div>
-            <div className={Style.PlansItemBody}>
-              <p className={Style.PlansItemBodyTexts}>Consulting</p>
-              <p className={Style.PlansItemBodyTexts}>Advising</p>
-              <p className={Style.PlansItemBodyTexts}>Business Planning</p>
-              <p className={Style.PlansItemBodyTexts}>-</p>
-              <p className={Style.PlansItemBodyTexts}>-</p>
-            </div>
-            <div className={Style.PlansItemFooter}>
-              <Button
-                className={`${Style.PlansItemFooterButton} custom-ant-btn`}
-                size={"large"}
-                type="primary"
-              >
-                Get more
-              </Button>
-            </div>
-          </div>
-        </Col>
-        <Col xs={24} sm={12} md={8}>
-          <div className={Style.PlansItemWrap}>
-            <div className={Style.PlansItemHeader}>
-              <h1 className={Style.PlansItemHeaderTitle}>ADVANCED PLAN</h1>
-              <h4 className={Style.PlansItemHeaderPrice}>499 ₼</h4>
-            </div>
-            <div className={Style.PlansItemBody}>
-              <p className={Style.PlansItemBodyTexts}>Consulting</p>
-              <p className={Style.PlansItemBodyTexts}>Advising</p>
-              <p className={Style.PlansItemBodyTexts}>Business Planning</p>
-              <p className={Style.PlansItemBodyTexts}>Investments</p>
-              <p className={Style.PlansItemBodyTexts}>-</p>
-            </div>
-            <div className={Style.PlansItemFooter}>
-              <Button
-                className={`${Style.PlansItemFooterButton} custom-ant-btn`}
-                size={"large"}
-                type="primary"
-              >
-                Get more
-              </Button>
-            </div>
-          </div>
-        </Col>
-        <Col xs={24} sm={12} md={8}>
-          <div className={Style.PlansItemWrap}>
-            <div className={Style.PlansItemHeader}>
-              <h1 className={Style.PlansItemHeaderTitle}>PREMIUM PLAN</h1>
-              <h4 className={Style.PlansItemHeaderPrice}>999 ₼</h4>
-            </div>
-            <div className={Style.PlansItemBody}>
-              <p className={Style.PlansItemBodyTexts}>Consulting</p>
-              <p className={Style.PlansItemBodyTexts}>Advising</p>
-              <p className={Style.PlansItemBodyTexts}>Business Planning</p>
-              <p className={Style.PlansItemBodyTexts}>Investments</p>
-              <p className={Style.PlansItemBodyTexts}>24/7 Support</p>
-            </div>
-            <div className={Style.PlansItemFooter}>
-              <Button
-                className={`${Style.PlansItemFooterButton} custom-ant-btn`}
-                size={"large"}
-                type="primary"
-              >
-                Get more
-              </Button>
-            </div>
-          </div>
-        </Col>
+        {plansData.map((item, index) => {
+          return (
+            <Col xs={24} sm={12} md={8}>
+              <div className={Style.PlansItemWrap}>
+                <div className={Style.PlansItemHeader}>
+                  <h1 className={Style.PlansItemHeaderTitle}>
+                    {item.PlansItemHeaderTitle}
+                  </h1>
+                  <h4 className={Style.PlansItemHeaderPrice}>
+                    {item.PlansItemHeaderPrice}
+                  </h4>
+                </div>
+                <div className={Style.PlansItemBody}>
+                  {item.PlansItemBodyTexts.map((textItem) => {
+                    return <p>{textItem}</p>;
+                  })}
+                </div>
+                <div className={Style.PlansItemFooter}>
+                  <Button
+                    className={`${Style.PlansItemFooterButton} custom-ant-btn`}
+                    size={"large"}
+                    type="primary"
+                    onClick={() => {
+                      setPlanItemModalVisible(true);
+                      setSelectedPlanId(index);
+                    }}
+                  >
+                    Get more
+                  </Button>
+                </div>
+              </div>
+            </Col>
+          );
+        })}
       </Row>
+      <Modal
+        title="Detailed plan"
+        visible={planItemModalVisible}
+        onCancel={() => setPlanItemModalVisible(false)}
+        footer={null}
+      >
+        <PlansItem
+          plans={plansData[selectedPlanId]}
+          selectedPlanId={selectedPlanId}
+        />
+      </Modal>
     </div>
   );
 };

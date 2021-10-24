@@ -1,10 +1,14 @@
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Style from "./Services.module.css";
 import WebIcon from "@mui/icons-material/Web";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
 import ManageSearchRoundedIcon from "@mui/icons-material/ManageSearchRounded";
 import { Button, Row, Col } from "antd";
+
 const Services = () => {
+  const { asPath } = useRouter();
   return (
     <div className={Style.ServicesWrap}>
       <div className={Style.ServicesTitleWrap}>
@@ -49,11 +53,15 @@ const Services = () => {
           </Col>
         </Row>
       </div>
-      <Row>
-        <Col className="center" span={24}>
-          <Button className="custom-ant-btn">Find out more</Button>
-        </Col>
-      </Row>
+      {asPath !== "/services" && (
+        <Row>
+          <Col className="center" span={24}>
+            <Link href="/services">
+              <Button className="custom-ant-btn">Find out more</Button>
+            </Link>
+          </Col>
+        </Row>
+      )}
     </div>
   );
 };

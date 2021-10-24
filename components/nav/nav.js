@@ -1,4 +1,5 @@
 import { React, useState, useLayoutEffect, useContext } from "react";
+import { useRouter } from "next/router";
 import { Menu, Button, Row, Col, Dropdown } from "antd";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
@@ -8,7 +9,7 @@ import { GeneralData } from "../../Context/Context";
 const Nav = () => {
   const generalData = useContext(GeneralData);
   const screenIsXS = generalData.screenIsXS;
-
+  const { asPath } = useRouter();
   const menuOnMobile = (
     <Menu className={(Style.nav, Style.navBottom)} mode="horizontal">
       <Row style={{ width: "100%" }} align={"middle"} justify={"center"}>
@@ -74,14 +75,16 @@ const Nav = () => {
           )}
 
           <Col className={Style.menuItem} xs={8} sm={8}>
-            {!screenIsXS && (
-              <Button
-                className={"custom-ant-btn"}
-                size={"large"}
-                type="primary"
-              >
-                Send Request
-              </Button>
+            {!screenIsXS && asPath !== "/contact" && (
+              <Link href="/contact">
+                <Button
+                  className={"custom-ant-btn"}
+                  size={"large"}
+                  type="primary"
+                >
+                  Send Request
+                </Button>
+              </Link>
             )}
           </Col>
           {screenIsXS && (

@@ -28,6 +28,7 @@
 
 .ContactFormFormItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 1em 0;
@@ -41,6 +42,10 @@
 .ContactFormButton{
     color: var(--dark-blue) !important;
     width: 200px;
+}
+
+.ContactFormError{
+  color: rgb(128, 43, 43);
 }
 
 @media screen and (max-width: 575px) {
