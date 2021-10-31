@@ -49,7 +49,7 @@ const Plans = () => {
       <Row gutter={30}>
         {plansData.map((item, index) => {
           return (
-            <Col xs={24} sm={12} md={8}>
+            <Col key={item.id} xs={24} sm={12} md={8}>
               <div className={Style.PlansItemWrap}>
                 <div className={Style.PlansItemHeader}>
                   <h1 className={Style.PlansItemHeaderTitle}>

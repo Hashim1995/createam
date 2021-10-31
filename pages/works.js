@@ -8,22 +8,15 @@ import Portfolio from "../components/portfolio/Portfolio";
 
 const WorksPage = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      exit={{ opacity: 0 }}
-    >
-      <MainFrame>
-        <Head>
-          <title>About</title>
-        </Head>
-        <div className="PortfolioWrap">
-          <Portfolio />
-        </div>
-        <Divider />
-      </MainFrame>
-    </motion.div>
+    <MainFrame>
+      <Head>
+        <title>About</title>
+      </Head>
+      <div className="PortfolioWrap">
+        <Portfolio />
+      </div>
+      <Divider />
+    </MainFrame>
   );
 };
 export default WorksPage;

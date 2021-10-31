@@ -8,23 +8,16 @@ import Services from "../components/services/Services";
 import Plans from "../components/plans/Plans";
 const ServicesPage = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      exit={{ opacity: 0 }}
-    >
-      <MainFrame>
-        <Head>
-          <title>About</title>
-        </Head>
-        <div className="ServicesWrap">
-          <Services />
-          <Plans />
-        </div>
-        <Divider />
-      </MainFrame>
-    </motion.div>
+    <MainFrame>
+      <Head>
+        <title>About</title>
+      </Head>
+      <div className="ServicesWrap">
+        <Services />
+        <Plans />
+      </div>
+      <Divider />
+    </MainFrame>
   );
 };
 export default ServicesPage;
