@@ -20,7 +20,7 @@ const PlansItem = ({ plans, selectedPlanId }) => {
         mollitia molestiae ab cumque, consectetur commodi harum enim, libero
         facere est, omnis fugiat!
       </p>
-      <Link href="/contact">
+      <Link href="/contact" passHref>
         <Button
           className={`${Style.PlansItemButton} custom-ant-btn`}
           size={"large"}

@@ -10,12 +10,12 @@ export const AboutUs = () => {
       <div className={Style.AboutUsTitleWrap}>
         <h1 className={Style.AboutUsTitle}>BAKU CREATEAM</h1>
         <h4 className={Style.AboutUsTitleText}>
-          "We love what we do and we love helping others succeed at what they
-          love to do."
+          We love what we do and we love helping others succeed at what they
+          love to do.
         </h4>
       </div>
       <Row>
-        <Col xs={12} md={8} xs={24}>
+        <Col md={8} xs={24}>
           <div className={Style.AboutUsItemWrap}>
             <SupervisedUserCircleIcon className={Style.AboutUsItemIcon} />
             <h2 className={Style.AboutUsItemtitle}>Who we are?</h2>
@@ -26,7 +26,7 @@ export const AboutUs = () => {
             </p>
           </div>
         </Col>
-        <Col xs={12} md={8} xs={24}>
+        <Col md={8} xs={24}>
           <div
             className={`${Style.AboutUsItemWrap} ${Style.AboutUsItemWrapSecond}`}
           >
@@ -39,7 +39,7 @@ export const AboutUs = () => {
             </p>
           </div>
         </Col>
-        <Col xs={12} md={8} xs={24}>
+        <Col md={8} xs={24}>
           <div className={Style.AboutUsItemWrap}>
             <FavoriteIcon className={Style.AboutUsItemIcon} />
             <h2 className={Style.AboutUsItemtitle}>Why We Do It?</h2>

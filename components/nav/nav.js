@@ -14,36 +14,36 @@ const Nav = () => {
   const menuOnMobile = (
     <Menu className={(Style.nav, Style.navBottom)} mode="horizontal">
       <Row style={{ width: "100%" }} align={"middle"} justify={"center"}>
-        <Col offset={0} xs={24} md={14} sm={20} xs={24} xl={10}>
+        <Col offset={0} xs={24} md={14} sm={20} xl={10}>
           <Row gutter={[12, 24]}>
             <Col span={24}>
               <Link href="/">
-                <a className={Style.navBottomLinks}>HOME</a>
+                <a className={Style.navBottomLinks}>ANA SƏHİFƏ</a>
               </Link>
             </Col>
             <Col span={24}>
               <Link href="/services">
-                <a className={Style.navBottomLinks}>SERVICES</a>
+                <a className={Style.navBottomLinks}>XİDMƏTLƏR</a>
               </Link>
             </Col>
             <Col span={24}>
               <Link href="/works">
-                <a className={Style.navBottomLinks}>WORKS</a>
+                <a className={Style.navBottomLinks}>İŞLƏRİMİZ</a>
               </Link>
             </Col>
             <Col span={24}>
               <Link href="/blog">
-                <a className={Style.navBottomLinks}>BLOG</a>
+                <a className={Style.navBottomLinks}>BLOQ</a>
               </Link>
             </Col>
             <Col span={24}>
               <Link href="/about">
-                <a className={Style.navBottomLinks}>ABOUT</a>
+                <a className={Style.navBottomLinks}>HAQQIMIZDA</a>
               </Link>
             </Col>
             <Col span={24}>
               <Link href="/contact">
-                <a className={Style.navBottomLinks}>CONTACT</a>
+                <a className={Style.navBottomLinks}>ƏLAQƏ</a>
               </Link>
             </Col>
           </Row>
@@ -77,13 +77,13 @@ const Nav = () => {
 
           <Col className={Style.menuItem} xs={8} sm={8}>
             {!screenIsXS && asPath !== "/contact" && (
-              <Link href="/contact">
+              <Link href="/contact" passHref>
                 <Button
                   className={"custom-ant-btn"}
                   size={"large"}
                   type="primary"
                 >
-                  Send Request
+                  Sorğu göndər
                 </Button>
               </Link>
             )}
@@ -107,36 +107,36 @@ const Nav = () => {
       {!screenIsXS && (
         <Menu className={(Style.nav, Style.navBottom)} mode="horizontal">
           <Row style={{ width: "100%" }} align={"middle"} justify={"center"}>
-            <Col offset={0} md={14} sm={20} xs={24} xl={10}>
+            <Col offset={0} md={14} sm={20} xs={24} xl={12}>
               <Row>
                 <Col span={4}>
                   <Link href="/">
-                    <a className={Style.navBottomLinks}>HOME</a>
+                    <a className={Style.navBottomLinks}>ANA SƏHİFƏ</a>
                   </Link>
                 </Col>
                 <Col span={4}>
                   <Link href="/services">
-                    <a className={Style.navBottomLinks}>SERVICES</a>
+                    <a className={Style.navBottomLinks}>XİDMƏTLƏR</a>
                   </Link>
                 </Col>
                 <Col span={4}>
                   <Link href="/works">
-                    <a className={Style.navBottomLinks}>WORKS</a>
+                    <a className={Style.navBottomLinks}>İŞLƏRİMİZ</a>
                   </Link>
                 </Col>
                 <Col span={4}>
                   <Link href="/blog">
-                    <a className={Style.navBottomLinks}>BLOG</a>
+                    <a className={Style.navBottomLinks}>BLOQ</a>
                   </Link>
                 </Col>
                 <Col span={4}>
                   <Link href="/about">
-                    <a className={Style.navBottomLinks}>ABOUT</a>
+                    <a className={Style.navBottomLinks}>HAQQIMIZDA</a>
                   </Link>
                 </Col>
                 <Col span={4}>
                   <Link href="/contact">
-                    <a className={Style.navBottomLinks}>CONTACT</a>
+                    <a className={Style.navBottomLinks}>ƏLAQƏ</a>
                   </Link>
                 </Col>
               </Row>

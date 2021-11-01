@@ -28,7 +28,7 @@ const Blog = () => {
               ></Image>
             </div>
             <div className={Style.BlogItemBottom}>
-              <Link href="/">
+              <Link href="/" passHref>
                 <h1 className={Style.BlogItemTitle}>Sample post with Image</h1>
               </Link>
               <p className={Style.BlogItemText}>
@@ -59,7 +59,7 @@ const Blog = () => {
               ></Image>
             </div>
             <div className={Style.BlogItemBottom}>
-              <Link href="/footer">
+              <Link href="/footer" passHref>
                 <h1 className={Style.BlogItemTitle}>Sample post with Image</h1>
               </Link>
               <p className={Style.BlogItemText}>
@@ -92,7 +92,7 @@ const Blog = () => {
               ></Image>
             </div>
             <div className={Style.BlogItemBottom}>
-              <Link href="/">
+              <Link href="/" passHref>
                 <h1 className={Style.BlogItemTitle}>Sample post with Image</h1>
               </Link>
               <p className={Style.BlogItemText}>
@@ -124,7 +124,7 @@ const Blog = () => {
               ></Image>
             </div>
             <div className={Style.BlogItemBottom}>
-              <Link href="/">
+              <Link href="/" passHref>
                 <h1 className={Style.BlogItemTitle}>Sample post with Image</h1>
               </Link>
               <p className={Style.BlogItemText}>

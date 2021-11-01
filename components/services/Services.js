@@ -12,11 +12,11 @@ const Services = () => {
   return (
     <div className={Style.ServicesWrap}>
       <div className={Style.ServicesTitleWrap}>
-        <h1 className={Style.ServicesTitle}>What we offer?</h1>
+        <h1 className={Style.ServicesTitle}>Nə təklif edirik?</h1>
         <h4 className={Style.ServicesTitleText}>
-          With the development of the technology world, each company is now
-          dying to find a place for itself in the digital world. You too can
-          take your first steps into this world with us.
+          Texnologiyanın inkişafı ilə birlikdə artıq hər bir şirkət dijital
+          dünyada öz yerini alır. Baku Createam komandası olaraq sizlərə, bu
+          yenilənən dünya ilə uyğunlaşmağa köməklik göstərməkdən qürur duyuruq.
         </h4>
       </div>
       <div className={Style.ServicesItemsWrap}>
@@ -24,7 +24,7 @@ const Services = () => {
           <Col xs={24} sm={12} md={8}>
             <div className={Style.ServicesItem}>
               <WebIcon className={Style.ServicesItemIcon} />
-              <h3 className={Style.ServicesItemTitle}>WEB DESIGN</h3>
+              <h3 className={Style.ServicesItemTitle}>VEB DİZAYN</h3>
               <p className={Style.ServicesItemText}>
                 We are trusted by a huge number of people are working hard
                 Anonymity and using cryptocurrency as a payment instrument
@@ -56,7 +56,7 @@ const Services = () => {
       {asPath !== "/services" && (
         <Row>
           <Col className="center" span={24}>
-            <Link href="/services">
+            <Link passHref href="/services">
               <Button className="custom-ant-btn">Find out more</Button>
             </Link>
           </Col>

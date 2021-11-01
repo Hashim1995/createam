@@ -60,8 +60,8 @@ const Plans = () => {
                   </h4>
                 </div>
                 <div className={Style.PlansItemBody}>
-                  {item.PlansItemBodyTexts.map((textItem) => {
-                    return <p>{textItem}</p>;
+                  {item.PlansItemBodyTexts.map((textItem, index) => {
+                    return <p key={index}>{textItem}</p>;
                   })}
                 </div>
                 <div className={Style.PlansItemFooter}>

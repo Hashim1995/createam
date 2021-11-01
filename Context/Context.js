@@ -9,7 +9,7 @@ const ContextProvider = (props) => {
     else {
       setScreenIsXS(false);
     }
-  });
+  }, []);
   const generalData = { screenIsXS: screenIsXS };
 
   return (

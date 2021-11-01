@@ -79,8 +79,8 @@ const ContactForm = () => {
       <div className={Style.ContactFormTitleWrap}>
         <h1 className={Style.ContactFormTitle}>CONTACT US</h1>
         <h4 className={Style.ContactFormTitleText}>
-          "We’ll help you combine the flexibility of the modern web with the
-          control and compliance your business needs."
+          We’ll help you combine the flexibility of the modern web with the
+          control and compliance your business needs.
         </h4>
       </div>
       <div className={Style.ContactFormFormWrap}>
