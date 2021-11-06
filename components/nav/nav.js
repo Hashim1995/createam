@@ -17,32 +17,32 @@ const Nav = () => {
         <Col offset={0} xs={24} md={14} sm={20} xl={10}>
           <Row gutter={[12, 24]}>
             <Col span={24}>
-              <Link href="/">
+              <Link href="/" passHref>
                 <a className={Style.navBottomLinks}>ANA SƏHİFƏ</a>
               </Link>
             </Col>
             <Col span={24}>
-              <Link href="/services">
+              <Link href="/services" passHref>
                 <a className={Style.navBottomLinks}>XİDMƏTLƏR</a>
               </Link>
             </Col>
             <Col span={24}>
-              <Link href="/works">
+              <Link href="/works" passHref>
                 <a className={Style.navBottomLinks}>İŞLƏRİMİZ</a>
               </Link>
             </Col>
             <Col span={24}>
-              <Link href="/blog">
+              <Link href="/blog" passHref>
                 <a className={Style.navBottomLinks}>BLOQ</a>
               </Link>
             </Col>
             <Col span={24}>
-              <Link href="/about">
+              <Link href="/about" passHref>
                 <a className={Style.navBottomLinks}>HAQQIMIZDA</a>
               </Link>
             </Col>
             <Col span={24}>
-              <Link href="/contact">
+              <Link href="/contact" passHref>
                 <a className={Style.navBottomLinks}>ƏLAQƏ</a>
               </Link>
             </Col>

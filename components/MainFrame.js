@@ -8,6 +8,7 @@ import Nav from "./nav/nav";
 export const siteTitle = "Home Page";
 
 const MainFrame = ({ children, home }) => {
+  const childProps = children;
   const { Header, Sider, Content } = Layout;
   return (
     <div className={Styles.container}>
@@ -34,7 +35,6 @@ const MainFrame = ({ children, home }) => {
             siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="author" content="Baku createam"></meta>
       </Head>
 
@@ -42,7 +42,7 @@ const MainFrame = ({ children, home }) => {
         <Header className={Styles.header}>
           <Nav />
         </Header>
-        <Content>{children}</Content>
+        <Content>{childProps}</Content>
         <Footer>Footer</Footer>
       </Layout>
     </div>
