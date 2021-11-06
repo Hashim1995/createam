@@ -15,7 +15,7 @@ const Services = () => {
         <h1 className={Style.ServicesTitle}>Nə təklif edirik?</h1>
         <h4 className={Style.ServicesTitleText}>
           Texnologiyanın inkişafı ilə birlikdə artıq hər bir şirkət dijital
-          dünyada öz yerini alır. Baku Createam komandası olaraq sizlərə, bu
+          dünyada öz yerini alır. Indesign Group komandası olaraq sizlərə, bu
           yenilənən dünya ilə uyğunlaşmağa köməklik göstərməkdən qürur duyuruq.
         </h4>
       </div>

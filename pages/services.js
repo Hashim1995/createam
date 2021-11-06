@@ -10,9 +10,7 @@ const ServicesPage = () => {
   return (
     <MainFrame>
       <Head>
-        <title>
-          Xidmətlər Baku Createam Veb saytların yığılması qiymətləri
-        </title>
+        <title>Xidmətlər Indesign Group</title>
         <meta
           name="description"
           content="baku createam olaraq, kataloq veb saytların, statik veb saytların, müştəri ilə birbaşa əlaqə qura biləciyiniz saytların hazırlanmasını təklif edirik. Ən müasir texnologiyalar ilə sizin veb saytlarınız komandamız tərəfindən hazıranır"

@@ -43,7 +43,7 @@ const We = () => {
         <Image
           className={Style.WeBackgroundImg}
           src={WeBackgroundImg}
-          alt="Baku Createam Who we are?"
+          alt="Indesign Group Who we are?"
           layout="fill"
         />
       </div>

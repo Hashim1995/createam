@@ -11,7 +11,7 @@ const WorksPage = () => {
     <MainFrame>
       <Head>
         <title>
-          İşlərimiz, Baku createam olaraq təhvil verdiyimiz veb sayt proyektləri
+          İşlərimiz, Indesign Group olaraq təhvil verdiyimiz proyektlər
         </title>
         <meta
           name="description"

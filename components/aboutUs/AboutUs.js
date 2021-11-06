@@ -8,7 +8,7 @@ export const AboutUs = () => {
   return (
     <div className={Style.AboutUsWrap}>
       <div className={Style.AboutUsTitleWrap}>
-        <h1 className={Style.AboutUsTitle}>BAKU CREATEAM</h1>
+        <h1 className={Style.AboutUsTitle}>Indesign Group</h1>
         <h4 className={Style.AboutUsTitleText}>
           We love what we do and we love helping others succeed at what they
           love to do.
@@ -20,9 +20,8 @@ export const AboutUs = () => {
             <SupervisedUserCircleIcon className={Style.AboutUsItemIcon} />
             <h2 className={Style.AboutUsItemtitle}>Who we are?</h2>
             <p className={Style.AboutUsItemText}>
-              We are a team of Baku web design and development professionals who
-              love partnering with good people and businesses to help them
-              achieve online success.
+              We are a team of Indesign Group, professionals who love partnering
+              with good people and businesses to help them achieve success.
             </p>
           </div>
         </Col>
@@ -33,9 +32,11 @@ export const AboutUs = () => {
             <ExtensionIcon className={Style.AboutUsItemIcon} />
             <h2 className={Style.AboutUsItemtitle}>What We Do?</h2>
             <p className={Style.AboutUsItemText}>
-              We’re focused on honing our crafts and bringing everything we have
-              to the table for our clients. We create custom, functional
-              websites focused on converting your users into customers.
+              Our goal is to meet the specific needs of each client with
+              creative and appropriate design solutions and it is our belief
+              that the integration of all the complementary design disciplines
+              results into exceptional memories. We strongly emphasize the
+              creative process and project management.
             </p>
           </div>
         </Col>
