@@ -12,10 +12,9 @@ const Difference = () => {
   return (
     <div className={Style.DifferenceWrap}>
       <div className={Style.DifferenceTitleWrap}>
-        <h1 className={Style.DifferenceTitle}>Our Difference</h1>
+        <h1 className={Style.DifferenceTitle}>Fərqimiz</h1>
         <h4 className={Style.DifferenceTitleText}>
-          You will love all of the features in our template. 100% guaranteed
-          satisfaction.
+          Öncədən ödəmə yox, köhnə texnologiyaların istifadəsi yox
         </h4>
       </div>
       <div className={Style.DifferenceItemWrap}>
@@ -27,19 +26,19 @@ const Difference = () => {
               />
               <h3 className={Style.DifferenceItemTitle}>Responsive Layout</h3>
               <p className={Style.DifferenceItemText}>
-                All the pages of this template are responsive. We used Bootstrap
-                framework to build the website. It’s the best in class.
+                Hazırlanan veb saytlardan Smartfonlarda, Tabletlərdə,
+                Notebooklarda, böyük ekran PC-lərdə və digət fərqli ölçülü
+                cihazlarda rahatlıqla istifadə etmək olar
               </p>
             </div>
           </Col>
           <Col xs={24} sm={12} md={12} lg={8}>
             <div className={Style.DifferenceItem}>
               <PostAddOutlinedIcon className={Style.DifferenceItemIcon} />
-              <h3 className={Style.DifferenceItemTitle}>Multipile Pages</h3>
+              <h3 className={Style.DifferenceItemTitle}>Limitsiz səhifə</h3>
               <p className={Style.DifferenceItemText}>
-                All the pages are created based on real content that you will
-                need to run your business. Change image and text and you’re good
-                to go!
+                Biz əsas fərqlərimizdən biridə, heç bir veb saytda səhifə limiti
+                tələb etmirik. İstəniləmn sayda səhifə əlavə oluna bilər
               </p>
             </div>
           </Col>
